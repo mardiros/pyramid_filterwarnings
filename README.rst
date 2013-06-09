@@ -47,6 +47,6 @@ It is also possible to set category_, module and message, and do many rules.
     # and more if necessary...
 
 
-.. _`warnings.filterwarnings`: _http://docs.python.org/2/library/warnings.html#warnings.filterwarnings
+.. _warnings.filterwarnings: _http://docs.python.org/2/library/warnings.html#warnings.filterwarnings
 .. _category: _http://docs.python.org/2/library/warnings.html#warning-categories
 
