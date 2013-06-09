@@ -5,7 +5,7 @@ Getting Started
 ---------------
 
 The aim of this project is to provide a generic way to configure python
-`warnings.filterwarnings_`.
+`warnings.filterwarnings`_.
 Python warnings can be configured via Environment variable, Python interpreter
 argument, or directly in the code. This plugin provides to Pyramid application
 a clean way to configure the warning level via its configuration file.
@@ -14,8 +14,8 @@ a clean way to configure the warning level via its configuration file.
 Configuration
 -------------
 
-Set the pyramid_filterwarnings plugin from in the Pyramid ini file then configure
-the level.
+Set the pyramid_filterwarnings plugin from in the Pyramid ini file then
+configure the level.
 
 ::
 
