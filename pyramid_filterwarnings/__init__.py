@@ -25,7 +25,6 @@ def get_category(settings, key):
 
 
 def includeme(config):
-
     settings = config.registry.settings
     key = 'filterwarnings.category'
     warnings.filterwarnings(settings.get('filterwarnings.action', 'ignore'),
@@ -45,6 +44,5 @@ def includeme(config):
                                 settings.get('{0}.message'.format(prefix), ''),
                                 get_category(settings, key),
                                 settings.get('{0}.module'.format(prefix), ''),
-                                append=True
                                 )
         index += 1
