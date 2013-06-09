@@ -20,11 +20,17 @@ configure the level.
 ::
 
     pyramid.includes =
-        ... your other plugins ...
         pyramid_filterwarnings
+        ... your other plugins ...
 
     # configure the warning level, default is ignore
     filterwarnings.level = ignore
+
+.. note::
+
+    You should set the filterwarnings on top of the configuration if you want
+    to catch plugins warnings. You should also set the level to error for your
+    developement environment to fix the warning as soon as possible.
 
 
 It is also possible to set category_, module and message, and do many rules.
@@ -40,9 +46,9 @@ It is also possible to set category_, module and message, and do many rules.
     filterwarnings.1.module = sqlalchemy\..*
     filterwarnings.1.level = notice
 
-    filterwarnings.2.category = Warning
-    filterwarnings.2.module = pyramid\..*
-    filterwarnings.2.level = ignore
+    filterwarnings.2.action = ignore
+    filterwarnings.2.module = pyramid_jinja2\.*
+    filterwarnings.2.message = reload_templates setting is deprecated
 
     # and more if necessary...
 
