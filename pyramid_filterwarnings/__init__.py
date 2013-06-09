@@ -2,7 +2,7 @@
 import warnings
 from pyramid.exceptions import ConfigurationError
 
-__version__ = '0.1'
+__version__ = '0.2~dev'
 
 
 def get_category(settings, key):
