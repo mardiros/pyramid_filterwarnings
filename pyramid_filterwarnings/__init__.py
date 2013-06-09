@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import logging
 import warnings
 from pyramid.exceptions import ConfigurationError
 
@@ -25,6 +26,8 @@ def get_category(settings, key):
 
 
 def includeme(config):
+    log = logging.getLogger(__name__)
+    log.debug('Configure filterwarnings')
     settings = config.registry.settings
     key = 'filterwarnings.category'
     warnings.filterwarnings(settings.get('filterwarnings.action', 'ignore'),
