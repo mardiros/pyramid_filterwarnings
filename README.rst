@@ -24,7 +24,7 @@ configure the level.
         ... your other plugins ...
 
     # configure the warning level, default is ignore
-    filterwarnings.level = ignore
+    filterwarnings.action = ignore
 
 .. note::
 
