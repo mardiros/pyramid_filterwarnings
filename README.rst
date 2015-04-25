@@ -44,7 +44,7 @@ It is also possible to set category_, module and message, and do many rules.
     # Add other rules
     filterwarnings.1.category = DeprecationWarning
     filterwarnings.1.module = sqlalchemy\..*
-    filterwarnings.1.level = notice
+    filterwarnings.1.action = notice
 
     filterwarnings.2.action = ignore
     filterwarnings.2.module = pyramid_jinja2\.*
